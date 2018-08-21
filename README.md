@@ -1,2 +1,2 @@
 # 7sieben7.github.io
-Offizielle Website von 7SIEBEN7 - sowie [7sbn7.jimdo.com](7sbn7.jimdo.com)
+Offizielle Website von 7SIEBEN7 - sowie [7sbn7.jimdo.com](https://7sbn7.jimdo.com)
