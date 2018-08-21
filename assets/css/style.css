@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+	src: url('/assets/font/HACKED.ttf');
+	font-family: 'hacked';
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #191919;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: #292929;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	left: -243px;
+	height: 100%;
+	width: 240px;
+	transition: ease-in-out 0.4s;
+	background-color: #222;
+	padding: 30px;
+	box-shadow: 0 0 16px rgba(0,0,0,0.7);
+}
+
+#nav.change {
+	left: 0;
+}
+
+#nav .btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	cursor: pointer;
+	margin: 5px 14px;
+}
+
+#nav .bar1, 
+#nav .bar2, 
+#nav .bar3 {
+	width: 30px;
+	height: 5px;
+	background-color: #FFFFFF;
+	margin: 6px 0;
+	transition: 0.4s;
+	border-radius: 1px;
+}
+
+#nav .change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+#nav .change .bar2 {
+	opacity: 0;
+}
+
+#nav .change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#nav a {
+	color: #dedede;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #21E5FF;
+}
+
+#nav a li {
+	width: calc(100% - 80px);
+	padding: 10px;
+	list-style-type: none;
+}
+
+#header #title {
+	font-family: 'hacked';
+	font-size: 10em;
+	text-align: center;
+	text-shadow: 0 0 40px #000;
+}
+
+#header #title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#main {
+	display: block;
+	margin: 0 auto;
+	width: 700px;
+	border-top: 20px solid #78BCDB;
+	border-bottom: 20px solid #78BCDB;
+	padding: 20px;
+	background-color: #83d0f5;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+	text-align: center;
+	color: #000;
+	margin-bottom: 50px;
+}
+
+#main hr {
+	border: 0;
+	height: 7px;
+	background-color: rgba(0,0,0,0.1);
+	margin: 20px 0;
+}
+
+#main .elmt .title {
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+#main .elmt .btn-a {
+	font-size: 32px;
+	padding: 10px 20px;
+	border: 4px solid #106F94;
+	background-color: rgba(16,111,148,0.5);
+	color: #fff;
+	outline: 0;
+	cursor: pointer;
+}
+
+#main .elmt .btn-a:hover,
+#main .elmt .btn-b:hover,
+#main .elmt .btn-c:hover {
+	background-color: #106F94;
+}
+
+#main .elmt .btn-b {
+	font-size: 22px;
+	padding: 7px 15px;
+	border: 3px solid #106F94;
+	background-color: rgba(16,111,148,0.5);
+	color: #fff;
+	outline: 0;
+	cursor: pointer;
+}
+
+#main .elmt .btn-c {
+	font-size: 14px;
+	padding: 4px 10px;
+	border: 2px solid #106F94;
+	background-color: rgba(16,111,148,0.5);
+	color: #fff;
+	outline: 0;
+	cursor: pointer;
+}
+
+#main .elmt .content .title {
+	font-size: 22px;
+	padding: 5px;
+}
+
+#main .elmt .video iframe {
+	width: 100%;
+	height: 393.75px;
+}
+
+#main .elmt .video iframe,
+#main .elmt .image img {
+	box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* Home */
+#main .elmt.il .content {
+	display: block;
+	text-align: -webkit-center;
+}
+
+#main .elmt.il table tr {
+}
+
+#main .elmt.il table td {
+	text-align: left;
+	font-size: 17px;
+}
+
+#main .elmt.il table td:first-child {
+	padding-right: 10px;
+	border-bottom: 1px solid #000;
+}
+
+#main .elmt.il table tr:last-child td {
+	border-bottom: 0;
+}
+
+
+#main .elmt.il table td button {
+	width: 100%;
+}
+
+#main .elmt.ns .image img {
+	width: 100%;
+	height: auto;
+}
+
+#main .elmt.sc {
+	text-align: center;
+	font-size: 27px;
+}
+
+#main .elmt.sc a {
+	text-decoration: none;
+}
+
+#main .elmt.sm {
+	display: block;
+	text-align: -webkit-center;
+}
+
+#main .elmt.sm .img {
+	display: table-cell;
+	width: 27%;
+}
+
+#main .elmt.sm .img img {
+	vertical-align: middle;
+	width: 90%;
+	transition: ease-in-out 0.15s;
+}
+
+#main .elmt.sm .img img:hover {
+	opacity: 0.7;
+}
+
+#main .elmt.sm .img img:active {
+	opacity: 1;
+}
+
+/* Help */
+#main .elmt.hi .content {
+	text-align: justify;
+	padding: 0 20px;
+}
+
+#main .elmt.hi .content li .important {
+	color: #BF0F0F;
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	#nav {
+		position: fixed;
+		padding-top: 50px;
+		width: 183px;
+	}
+	
+	#nav .btn {
+		left: 243px;
+		width: 100vw;
+		margin: 0;
+		padding: 5px 14px;
+		background-color: #222;
+	}
+	
+	#header {
+		margin-top: 60px;
+	}
+	
+	#header #title {
+		font-size: 17vw;
+	}
+	
+	#main {
+		width: calc(100% - 100px);
+	}
+	
+	#main .elmt .description p {
+		text-align: justify;
+	}
+	
+}
