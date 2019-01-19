@@ -164,10 +164,6 @@ a:hover {
 	cursor: pointer;
 }
 
-#main .elmt .content {
-	text-align: center;	
-}
-
 #main .elmt .content .title {
 	font-size: 22px;
 	padding: 5px;
